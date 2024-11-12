@@ -4,16 +4,42 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+
+  background-color: black;
+
+  transition: background-color ease-in-out .5s;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-button {
-  all: unset;
-  padding: 5px 10px;
-  border: black 1px solid;
-  cursor: pointer;
-  user-select: none;
+#penguinBox {
+  height: 80%
 }
 
-button:hover {
-  background-color: lightgray;
+img {
+  height: 90%;
+  transition: all ease-in-out .5s;
+}
+
+img:hover {
+  height: 95%
+}
+
+p {
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: color ease-in-out .5s;
+}
+
+@keyframes fadeIn {
+  from {
+    filter: brightness(0);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+
+a {
+  font-weight: 600;
 }
