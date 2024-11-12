@@ -6,8 +6,9 @@ let ci = Math.floor(Math.random() * colors.length)
 window.onload = () => {
   let pi = Math.floor(Math.random() * penguins.length)
   let penguinImg = document.createElement("img")
-  penguinImg.setAttribute("src", "/" + penguins[pi] + ".svg")
+  penguinImg.setAttribute("src", "./" + penguins[pi] + ".svg")
   penguinImg.addEventListener("click", regenPenguin)
+  penguinImg.width = Math.min(window.innerWidth, window.innerHeight) * .7
   document.getElementById("penguinBox").appendChild(penguinImg)
   penguins.splice(pi, 1)
 
