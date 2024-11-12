@@ -19,7 +19,7 @@ window.onload = () => {
 function regenPenguin() {
   let pi = Math.floor(Math.random() * penguins.length)
   let penguinImg = document.getElementsByTagName("img")[0]
-  penguinImg.setAttribute("src", "/" + penguins[pi] + ".svg")
+  penguinImg.setAttribute("src", "./" + penguins[pi] + ".svg")
   penguinImg.animate([
     {height: "95%"},
     {height: "90%"},
